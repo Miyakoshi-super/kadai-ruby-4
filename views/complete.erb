@@ -61,7 +61,7 @@
             </tr>
             <tr>
                 <th class="text-center">内容</th>
-                <td><%= params['content'] %></td>
+                <td><%= params['content'].gsub(/\r\n|\r|\n/, "<br>") %></td>
                 
             </tr>
         </table>
